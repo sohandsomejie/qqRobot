@@ -1,0 +1,22 @@
+- id: mzrlmv
+  name: yakumo
+  config:
+    pipeline:
+      build:
+        - tsc
+        - esbuild
+        - client
+      clean:
+        - tsc --clean
+- id: fl77ex
+  name: yakumo-esbuild
+- id: k9w6dn
+  name: yakumo-tsc
+- id: yffoxc
+  name: '@koishijs/client/lib'
+- id: whar3j
+  name: yakumo/run
+- id: u809ft
+  name: yakumo/publish
+- id: atz50a
+  name: yakumo/version

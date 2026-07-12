@@ -1,0 +1,80 @@
+plugins:
+  group:server:
+    server:xjib0r:
+      port: 5140
+      maxPort: 5149
+    ~server-satori:vgrshx: {}
+    ~server-temp:390shf: {}
+  group:basic:
+    ~admin:7dw3ux: {}
+    ~bind:m3gbhh: {}
+    commands:xx02fx: {}
+    help:i2j6vy: {}
+    http:amfzvi: {}
+    ~inspect:yfmhn7: {}
+    locales:lxqelr: {}
+    proxy-agent:vrbljd: {}
+    rate-limit:ju971g: {}
+    telemetry:wcuezt: {}
+  group:console:
+    actions:oweyhi: {}
+    analytics:7z0c0l: {}
+    android:6oru2p:
+      $if: env.KOISHI_AGENT?.includes('Android')
+    ~auth:6olbiw: {}
+    config:gjvqb4: {}
+    console:0v90ju:
+      open: true
+    dataview:bfb7ga: {}
+    desktop:xl03dm:
+      $if: env.KOISHI_AGENT?.includes('Desktop')
+    explorer:vu6voy: {}
+    logger:u5uysx: {}
+    insight:0mf27g: {}
+    market:yc4lpo:
+      search:
+        endpoint: https://registry.koishi.chat/index.json
+    notifier:ejcc3p: {}
+    oobe:y6ckb7: {}
+    sandbox:j5231c: {}
+    status:dfxp7m: {}
+    theme-vanilla:8xjmzr: {}
+  group:storage:
+    ~database-mongo:mhvces:
+      database: koishi
+    ~database-mysql:a2hk8m:
+      database: koishi
+    ~database-postgres:xf3o90:
+      database: koishi
+    database-sqlite:jo0wyt:
+      path: data/koishi.db
+    assets-local:vrt41k: {}
+  group:adapter:
+    ~adapter-dingtalk:2z3hg1: {}
+    ~adapter-discord:2lrp1m: {}
+    ~adapter-kook:js4j8r: {}
+    ~adapter-lark:20b8m3: {}
+    ~adapter-line:vn7h38: {}
+    ~adapter-mail:1cmhgf: {}
+    ~adapter-matrix:yaxd5d: {}
+    ~adapter-qq:rhx7n5: {}
+    ~adapter-satori:x308we: {}
+    ~adapter-slack:9g1yr2: {}
+    ~adapter-telegram:dvzt0i: {}
+    ~adapter-wechat-official:50tgb4: {}
+    ~adapter-wecom:jpd322: {}
+    ~adapter-whatsapp:eyie40: {}
+    ~adapter-zulip:g09x9y: {}
+  group:develop:
+    $if: env.NODE_ENV === 'development'
+    hmr:7sb96c:
+      root:
+        - .
+  rnumber:htrk2t: {}
+  my-chat:w3pq83:
+    apiKey: ${{ env.DASHSCOPE_API_KEY }}
+    model: qwen-plus
+    proxy: https://dashscope.aliyuncs.com/compatible-mode/v1
+    enableContext: true
+  shds-signin:02ob3d:
+    fortressInitTime: '2025-06-07'

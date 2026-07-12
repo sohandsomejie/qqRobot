@@ -1,0 +1,9 @@
+[submodule "external/my-chat"]
+	path = external/my-chat
+	url = https://github.com/sohandsomejie/koishi-plugin-my-chat.git
+[submodule "external/rnumber"]
+	path = external/rnumber
+	url = https://github.com/sohandsomejie/koishi-plugin-rnumber.git
+[submodule "external/shds-signin"]
+	path = external/shds-signin
+	url = https://github.com/sohandsomejie/koishi-plugin-shds-signin.git

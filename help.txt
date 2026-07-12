@@ -1,0 +1,4 @@
+npm login --registry https://registry.npmjs.org
+npm run build shds-signin
+npm run bump  shds-signin -3
+npm publish --workspace koishi-plugin-shds-signin --access public --registry https://registry.npmjs.org
