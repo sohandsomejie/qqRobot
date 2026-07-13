@@ -76,5 +76,4 @@ plugins:
     model: qwen-plus
     proxy: https://dashscope.aliyuncs.com/compatible-mode/v1
     enableContext: true
-  shds-signin:02ob3d:
-    fortressInitTime: '2025-06-07'
+  shds-signin:02ob3d: {}
