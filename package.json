@@ -32,6 +32,7 @@
     "bump": "yakumo version",
     "dep": "yakumo upgrade",
     "pub": "yakumo publish",
+    "test:shds-signin": "tsx --test external/shds-signin/test/**/*.test.ts",
     "dev": "cross-env NODE_ENV=development koishi start -r esbuild-register -r yml-register",
     "start": "koishi start"
   },
